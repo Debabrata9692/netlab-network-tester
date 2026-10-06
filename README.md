@@ -1,4 +1,4 @@
-# Network Latency & Packet-Loss Chaos Emulator
+# NetLab – Linux Network Latency & Packet Loss Tester
 
 A Linux/C++17 tool that builds an isolated test network, impairs it with real kernel-level latency and packet loss, sends real UDP/TCP traffic across it, and measures what actually arrives.
 
