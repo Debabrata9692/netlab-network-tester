@@ -1,0 +1,16 @@
+Test ID: 008
+Date: 2026-10-04 15:07:19
+Protocol: UDP
+Configured Latency: 0 ms
+Configured Packet Loss: 0.00%
+Packet Size: 200 bytes
+Send Interval: 10 ms
+Packets Sent: 100
+Packets Received: 100
+Packets Lost: 0
+Packet Loss: 0.00%
+Average Latency: 0.18 ms
+Minimum Latency: 0.07 ms
+Maximum Latency: 0.37 ms
+Test Duration: 1.02 s
+Throughput: 154.6 kbit/s

@@ -1,0 +1,27 @@
+Network Chaos Emulator test suite
+Date:   2026-10-04 15:06:43
+Kernel: 6.18.40.1-microsoft-standard-WSL2
+g++:    g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+
+PASS  01 0 ms / 0% loss                    sent=300 lost=0 avg=0.16ms kernel_dropped=0 file=results/test_001.txt
+PASS  02 50 ms / 0% loss                   sent=300 lost=0 avg=50.31ms kernel_dropped=0 file=results/test_002.txt
+PASS  03 100 ms / 5% loss                  sent=300 lost=17 avg=100.30ms kernel_dropped=17 file=results/test_003.txt
+PASS  04 200 ms / 10% loss                 sent=300 lost=37 avg=200.30ms kernel_dropped=37 file=results/test_004.txt
+PASS  05 500 ms / 20% loss                 sent=300 lost=66 avg=500.32ms kernel_dropped=66 file=results/test_005.txt
+PASS  06a high loss 50%                    sent=300 lost=148 avg=0.19ms kernel_dropped=148 file=results/test_006.txt
+PASS  06b high loss 90%                    sent=300 lost=274 avg=0.18ms kernel_dropped=274 file=results/test_007.txt
+PASS  07a invalid menu input               all error messages shown, clean exit
+PASS  07b invalid loss on command line     exit=1: invalid packet-loss: 150
+PASS  07c invalid latency on command line  exit=1: invalid latency: abc
+PASS  08a server unavailable               exit=1: server unavailable at 127.0.0.1:59999
+PASS  08b test without server              refused politely, clean exit
+PASS  09a client port too large            exit=1: invalid port: 70000
+PASS  09b client port not a number         exit=1: invalid port: abc
+PASS  09c server port zero                 exit=1: invalid port: 0
+PASS  09d udp-recv port zero               exit=1: invalid port: 0
+PASS  09e port already in use              second server refused
+PASS  10 three consecutive tests           3 servers, 3 result blocks, 0 lost each, file=results/test_008.txt
+PASS  11 TCP at 20% loss                   sent=50 lost=0 max_rtt=213.69ms kernel_dropped=16 file=results/test_009.txt
+PASS  12 cleanup                           no leftover namespace or interface
+
+PASSED: 20   FAILED: 0

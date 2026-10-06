@@ -1,0 +1,24 @@
+Test ID: 006
+Date: 2026-10-04 15:07:10
+Protocol: UDP
+Configured Latency: 0 ms
+Configured Packet Loss: 50.00%
+Packet Size: 200 bytes
+Send Interval: 10 ms
+Packets Sent: 300
+Packets Received: 152
+Packets Lost: 148
+Packet Loss: 49.33%
+Average Latency: 0.19 ms
+Minimum Latency: 0.05 ms
+Maximum Latency: 0.55 ms
+Test Duration: 3.04 s
+Throughput: 79.5 kbit/s
+
+---- Kernel view (chaos0, this test) ----
+Packets entering netem:      300
+Dropped by netem (loss):     148
+Passed on to the link:       152
+Interface tx_packets:        152
+Application-measured loss:   148
+Cross-check: kernel and application agree

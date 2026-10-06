@@ -1,0 +1,23 @@
+Test ID: 009
+Date: 2026-10-04 15:07:22
+Protocol: TCP
+Configured Latency: 0 ms
+Configured Packet Loss: 20.00%
+Packet Size: 200 bytes
+Send Interval: 10 ms
+Packets Sent: 50
+Packets Received: 50
+Packets Lost: 0
+Packet Loss: 0.00%
+Average RTT: 45.84 ms
+Minimum RTT: 0.14 ms
+Maximum RTT: 213.69 ms
+Test Duration: 2.79 s
+Throughput: 28.1 kbit/s
+
+---- Kernel view (chaos0, this test) ----
+Packets entering netem:      88
+Dropped by netem (loss):     16
+Passed on to the link:       72
+Interface tx_packets:        72
+Application-measured loss:   0 (TCP retransmitted what the kernel dropped)
